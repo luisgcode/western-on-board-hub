@@ -1,0 +1,43 @@
+@import "tailwindcss";
+/* 
+  *  In this File I have everything I wanted to modify from Origin. For example typography sizes
+  *  This styles will be apply for the entire document.
+*/
+
+@theme {
+  --breakpoint-sm: 480px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 976px;
+  --breakpoint-xl: 1024px;
+  --breakpoint-2xl: 1200px;
+
+  --color-companyBlue: red;
+  --color-regularText: #a6dae5;
+
+  --spacing-sma_pad: 20px 40px;
+  --spacing-med_pad: 150px 40px;
+}
+
+/* & Typography settings */
+body {
+  font-size: clamp(18px, 2vw, 18px);
+  font-family: "Poppins", serif;
+  line-height: 1.4;
+  overflow-x: hidden;
+}
+
+h1 {
+  font-size: clamp(36px, 5vw, 60px);
+  font-weight: 800;
+}
+
+h2 {
+  font-size: clamp(25px, 4vw, 45px);
+  font-weight: 500;
+}
+
+h3 {
+  font-size: clamp(18px, 3.5vw, 35px);
+  font-weight: 500;
+  position: relative;
+}
