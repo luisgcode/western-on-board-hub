@@ -1,12 +1,234 @@
-# React + Vite
+# Western Fair District - OnBoard Hub
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+> **A centralized digital hub for Western Fair District event services workers to access onboarding documents, PDFs, and essential instructions online.**
 
-Currently, two official plugins are available:
+[![React](https://img.shields.io/badge/React-19.1.0-61DAFB?style=flat-square&logo=react)](https://reactjs.org/)
+[![Vite](https://img.shields.io/badge/Vite-7.0.0-646CFF?style=flat-square&logo=vite)](https://vitejs.dev/)
+[![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-4.1.11-38B2AC?style=flat-square&logo=tailwind-css)](https://tailwindcss.com/)
+[![License](https://img.shields.io/badge/License-MIT-green.svg?style=flat-square)](LICENSE)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🎯 Project Overview
 
-## Expanding the ESLint configuration
+The Western Fair District OnBoard Hub is a modern, responsive web application designed to streamline the onboarding process for new event services workers. By providing centralized access to all necessary documents, PDFs, and instructions online, this hub eliminates the need for physical paperwork and makes the training process more efficient and accessible.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### Key Features
+
+- 📄 **Document Management** - Easy access to all onboarding materials
+- 🔍 **Smart Search** - Find documents quickly with intelligent search
+- 📱 **Mobile First** - Responsive design for all devices
+- 🔒 **Secure Access** - Google Authentication with role-based permissions
+- ☁️ **Cloud Storage** - Reliable document storage and delivery
+- 🚀 **Fast Loading** - Optimized performance for quick access
+
+## 🛠️ Tech Stack
+
+### Frontend
+- **React 19.1.0** - Modern UI framework with hooks
+- **Vite 7.0.0** - Fast build tool and development server
+- **Tailwind CSS 4.1.11** - Utility-first CSS framework
+- **React Router** - Client-side routing *(planned)*
+
+### Backend *(planned)*
+- **Supabase** - Backend-as-a-Service (BaaS)
+  - PostgreSQL database
+  - Authentication with Google OAuth
+  - File storage and CDN
+  - Real-time capabilities
+  - RESTful API
+
+### Deployment *(planned)*
+- **Vercel/Netlify** - Frontend hosting
+- **Custom Domain** - Professional web presence
+- **SSL/HTTPS** - Secure connections
+
+## 📋 Getting Started
+
+### Prerequisites
+
+- Node.js (v18 or higher)
+- npm or yarn
+- Git
+
+### Installation
+
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/yourusername/western-on-board-hub.git
+   cd western-on-board-hub
+   ```
+
+2. **Install dependencies**
+   ```bash
+   npm install
+   ```
+
+3. **Start development server**
+   ```bash
+   npm run dev
+   ```
+
+4. **Open in browser**
+   ```
+   http://localhost:5173
+   ```
+
+### Available Scripts
+
+- `npm run dev` - Start development server
+- `npm run build` - Build for production
+- `npm run preview` - Preview production build
+- `npm run lint` - Run ESLint
+
+## 🏗️ Project Structure
+
+```
+western-on-board-hub/
+├── public/                 # Static assets
+├── src/                    # Source code
+│   ├── components/         # React components
+│   ├── pages/             # Page components
+│   ├── hooks/             # Custom hooks
+│   ├── utils/             # Helper functions
+│   ├── services/          # API services
+│   ├── assets/            # Images, fonts, etc.
+│   ├── App.jsx            # Main app component
+│   └── main.jsx           # Entry point
+├── package.json           # Dependencies
+├── vite.config.js         # Vite configuration
+├── tailwind.config.js     # Tailwind configuration
+└── README.md              # This file
+```
+
+## 🎨 Design System
+
+### Color Palette
+- **Primary**: Blue (#3B82F6) - Trust and professionalism
+- **Secondary**: Green (#10B981) - Success and progress
+- **Accent**: Yellow (#F59E0B) - Attention and highlights
+- **Neutral**: Gray (#6B7280) - Text and backgrounds
+
+### Typography
+- **Headers**: Inter Bold
+- **Body**: Inter Regular
+- **Monospace**: JetBrains Mono
+
+## 📱 Features Roadmap
+
+### Phase 1: MVP (Minimum Viable Product)
+- [ ] Basic document listing
+- [ ] PDF download functionality
+- [ ] Google authentication
+- [ ] Mobile responsive design
+- [ ] Admin upload interface
+
+### Phase 2: Enhanced Features
+- [ ] Document search and filtering
+- [ ] Category organization
+- [ ] PDF preview in browser
+- [ ] User progress tracking
+- [ ] Document versioning
+
+### Phase 3: Advanced Features
+- [ ] Real-time notifications
+- [ ] Document analytics
+- [ ] Multi-language support
+- [ ] Offline accessibility
+- [ ] Advanced admin dashboard
+
+## 🔧 Development Guidelines
+
+### Code Style
+- Use functional components with hooks
+- Follow React best practices
+- Use Tailwind for styling
+- Keep components small and focused
+- Write descriptive commit messages
+
+### File Naming
+- Components: `PascalCase.jsx`
+- Pages: `PascalCase.jsx`
+- Utilities: `camelCase.js`
+- Hooks: `use[Name].js`
+
+### Git Workflow
+1. Create feature branch from `main`
+2. Make commits with clear messages
+3. Test thoroughly before merging
+4. Use pull requests for code review
+
+## 🚀 Deployment
+
+### Environment Variables
+```env
+VITE_SUPABASE_URL=your_supabase_url
+VITE_SUPABASE_ANON_KEY=your_supabase_anon_key
+VITE_GOOGLE_CLIENT_ID=your_google_client_id
+```
+
+### Build Process
+```bash
+# Build for production
+npm run build
+
+# Test production build locally
+npm run preview
+```
+
+### Hosting Options
+- **Vercel** (Recommended) - Easy deployment with GitHub integration
+- **Netlify** - Alternative with form handling
+- **Cloudflare Pages** - Global CDN with edge functions
+
+## 🔒 Security Considerations
+
+- Environment variables for sensitive data
+- Input validation and sanitization
+- HTTPS enforcement
+- CORS configuration
+- Rate limiting (API level)
+- File upload restrictions
+
+## 📊 Performance Metrics
+
+### Target Metrics
+- **First Contentful Paint**: < 1.5s
+- **Largest Contentful Paint**: < 2.5s
+- **Time to Interactive**: < 3.5s
+- **Cumulative Layout Shift**: < 0.1
+- **Lighthouse Score**: > 90
+
+### Optimization Strategies
+- Code splitting and lazy loading
+- Image optimization
+- Bundle size analysis
+- CDN for static assets
+- Service worker caching
+
+## 🤝 Contributing
+
+1. Fork the repository
+2. Create your feature branch (`git checkout -b feature/amazing-feature`)
+3. Commit your changes (`git commit -m 'Add amazing feature'`)
+4. Push to the branch (`git push origin feature/amazing-feature`)
+5. Open a Pull Request
+
+## 📄 License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## 🙏 Acknowledgments
+
+- Western Fair District for the opportunity
+- React and Vite communities
+- Tailwind CSS team
+- Supabase for backend services
+
+## 📞 Support
+
+For questions or support, please contact:
+- **Email**: support@westernfairdistrict.com
+- **GitHub Issues**: [Create an issue](https://github.com/yourusername/western-on-board-hub/issues)
+
+---
+
+**Built with ❤️ for the Western Fair District team**
