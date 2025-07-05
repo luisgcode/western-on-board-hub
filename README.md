@@ -18,17 +18,19 @@ The Western Fair District OnBoard Hub is a modern, responsive web application de
 - 📱 **Mobile First** - Responsive design for all devices
 - 🔒 **Secure Access** - Google Authentication with role-based permissions
 - ☁️ **Cloud Storage** - Reliable document storage and delivery
-- 🚀 **Fast Loading** - Optimized performance for quick access
+- 🚀 **Fast Loading** - Optimized performance for quick access45
 
 ## 🛠️ Tech Stack
 
 ### Frontend
+
 - **React 19.1.0** - Modern UI framework with hooks
 - **Vite 7.0.0** - Fast build tool and development server
 - **Tailwind CSS 4.1.11** - Utility-first CSS framework
-- **React Router** - Client-side routing *(planned)*
+- **React Router** - Client-side routing _(planned)_
 
-### Backend *(planned)*
+### Backend _(planned)_
+
 - **Supabase** - Backend-as-a-Service (BaaS)
   - PostgreSQL database
   - Authentication with Google OAuth
@@ -36,7 +38,8 @@ The Western Fair District OnBoard Hub is a modern, responsive web application de
   - Real-time capabilities
   - RESTful API
 
-### Deployment *(planned)*
+### Deployment _(planned)_
+
 - **Vercel/Netlify** - Frontend hosting
 - **Custom Domain** - Professional web presence
 - **SSL/HTTPS** - Secure connections
@@ -52,17 +55,20 @@ The Western Fair District OnBoard Hub is a modern, responsive web application de
 ### Installation
 
 1. **Clone the repository**
+
    ```bash
    git clone https://github.com/yourusername/western-on-board-hub.git
    cd western-on-board-hub
    ```
 
 2. **Install dependencies**
+
    ```bash
    npm install
    ```
 
 3. **Start development server**
+
    ```bash
    npm run dev
    ```
@@ -102,12 +108,14 @@ western-on-board-hub/
 ## 🎨 Design System
 
 ### Color Palette
+
 - **Primary**: Blue (#3B82F6) - Trust and professionalism
 - **Secondary**: Green (#10B981) - Success and progress
 - **Accent**: Yellow (#F59E0B) - Attention and highlights
 - **Neutral**: Gray (#6B7280) - Text and backgrounds
 
 ### Typography
+
 - **Headers**: Inter Bold
 - **Body**: Inter Regular
 - **Monospace**: JetBrains Mono
@@ -115,6 +123,7 @@ western-on-board-hub/
 ## 📱 Features Roadmap
 
 ### Phase 1: MVP (Minimum Viable Product)
+
 - [ ] Basic document listing
 - [ ] PDF download functionality
 - [ ] Google authentication
@@ -122,6 +131,7 @@ western-on-board-hub/
 - [ ] Admin upload interface
 
 ### Phase 2: Enhanced Features
+
 - [ ] Document search and filtering
 - [ ] Category organization
 - [ ] PDF preview in browser
@@ -129,6 +139,7 @@ western-on-board-hub/
 - [ ] Document versioning
 
 ### Phase 3: Advanced Features
+
 - [ ] Real-time notifications
 - [ ] Document analytics
 - [ ] Multi-language support
@@ -138,6 +149,7 @@ western-on-board-hub/
 ## 🔧 Development Guidelines
 
 ### Code Style
+
 - Use functional components with hooks
 - Follow React best practices
 - Use Tailwind for styling
@@ -145,12 +157,14 @@ western-on-board-hub/
 - Write descriptive commit messages
 
 ### File Naming
+
 - Components: `PascalCase.jsx`
 - Pages: `PascalCase.jsx`
 - Utilities: `camelCase.js`
 - Hooks: `use[Name].js`
 
 ### Git Workflow
+
 1. Create feature branch from `main`
 2. Make commits with clear messages
 3. Test thoroughly before merging
@@ -159,6 +173,7 @@ western-on-board-hub/
 ## 🚀 Deployment
 
 ### Environment Variables
+
 ```env
 VITE_SUPABASE_URL=your_supabase_url
 VITE_SUPABASE_ANON_KEY=your_supabase_anon_key
@@ -166,6 +181,7 @@ VITE_GOOGLE_CLIENT_ID=your_google_client_id
 ```
 
 ### Build Process
+
 ```bash
 # Build for production
 npm run build
@@ -175,6 +191,7 @@ npm run preview
 ```
 
 ### Hosting Options
+
 - **Vercel** (Recommended) - Easy deployment with GitHub integration
 - **Netlify** - Alternative with form handling
 - **Cloudflare Pages** - Global CDN with edge functions
@@ -191,6 +208,7 @@ npm run preview
 ## 📊 Performance Metrics
 
 ### Target Metrics
+
 - **First Contentful Paint**: < 1.5s
 - **Largest Contentful Paint**: < 2.5s
 - **Time to Interactive**: < 3.5s
@@ -198,6 +216,7 @@ npm run preview
 - **Lighthouse Score**: > 90
 
 ### Optimization Strategies
+
 - Code splitting and lazy loading
 - Image optimization
 - Bundle size analysis
@@ -226,6 +245,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ## 📞 Support
 
 For questions or support, please contact:
+
 - **Email**: support@westernfairdistrict.com
 - **GitHub Issues**: [Create an issue](https://github.com/yourusername/western-on-board-hub/issues)
 
