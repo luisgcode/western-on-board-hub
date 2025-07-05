@@ -8,12 +8,12 @@ A simple, accessible web hub for Western Fair District event services workers to
 
 ### Frontend Concepts
 
-- [ ] **React Components & Props** - Building reusable UI components
+- [x] **React Components & Props** - Building reusable UI components
 - [ ] **React State Management** - useState, useEffect hooks
-- [ ] **React Router** - Navigation between pages
-- [ ] **Tailwind CSS** - Utility-first styling
+- [x] **React Router** - Navigation between pages
+- [x] **Tailwind CSS** - Utility-first styling
 - [ ] **File Upload/Download** - Handling PDF documents
-- [ ] **Responsive Design** - Mobile-first approach
+- [x] **Responsive Design** - Mobile-first approach
 
 ### Backend & Database Concepts
 

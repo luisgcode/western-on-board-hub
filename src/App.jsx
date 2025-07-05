@@ -1,6 +1,5 @@
 import { Route, Routes } from "react-router-dom";
 import "./App.css";
-import NavigationMenu from "../src/Components/NavigationMenu/NavigationMenu";
 import SideBar from "../src/Components/SideBar/SideBar";
 import NotFound from "../src/Pages/NotFound/NotFound";
 import HomePage from "../src/Pages/HomePage/HomePage";
@@ -16,7 +15,7 @@ function App() {
       <SideBar />
 
       {/* Contenedor para las rutas */}
-      <main className="w-full overflow-y-auto bg-white ">
+      <main className="w-full overflow-y-auto bg-white rounded-r-2xl ">
         <TopBar />
         <Routes>
           <Route path="/" element={<HomePage />} />
