@@ -8,12 +8,8 @@ const TopBar = () => {
           <input
             type="text"
             placeholder="Search..."
-            className="border rounded-3xl pl-6 border-gray-200 py-3 bg-white w-2xl"
+            className="border rounded-3xl pl-6 border-gray-200 py-3 bg-white w-60  md:w-120 lg:w-3xl"
           />
-        </div>
-
-        <div className="greeting pr-5">
-          <span>Event Services</span>
         </div>
       </div>
     </>

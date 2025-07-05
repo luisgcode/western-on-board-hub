@@ -11,7 +11,10 @@ import Others from "../src/Pages/Instrucctions/Instrucctions";
 
 function App() {
   return (
-    <div className="App flex p-10  " style={{ height: "calc(100vh - 0px)" }}>
+    <div
+      className="App flex p-2 lg:p-10  "
+      style={{ height: "calc(100vh - 0px)" }}
+    >
       <SideBar />
 
       {/* Contenedor para las rutas */}
