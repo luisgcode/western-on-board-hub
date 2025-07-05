@@ -1,13 +1,13 @@
 import { Route, Routes } from "react-router-dom";
 import "./App.css";
-import SideBar from "../src/Components/SideBar/SideBar";
-import NotFound from "../src/Pages/NotFound/NotFound";
-import HomePage from "../src/Pages/HomePage/HomePage";
-import AboutPage from "../src/Pages/AboutPage/AboutPage";
-import TopBar from "../src/Components/TopBar/TopBar";
-import Tasks from "../src/Pages/Tasks/Tasks";
-import Instrucctions from "../src/Pages/Instrucctions/Instrucctions";
-import Others from "../src/Pages/Instrucctions/Instrucctions";
+import SideBar from "./Components/SideBar/SideBar";
+import NotFound from "./Pages/NotFound/NotFound";
+import HomePage from "./Pages/HomePage/HomePage";
+import AboutPage from "./Pages/AboutPage/AboutPage";
+import TopBar from "./Components/TopBar/TopBar";
+import Tasks from "./Pages/Tasks/Tasks";
+import Instrucctions from "./Pages/Instrucctions/Instrucctions";
+import Others from "./Pages/Others/Others";
 
 function App() {
   return (
