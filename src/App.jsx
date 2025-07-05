@@ -1,10 +1,10 @@
 import { Route, Routes } from "react-router-dom";
 import "./App.css";
-import SideBar from "./Components/SideBar/SideBar";
+import SideBar from "./components/SideBar/SideBar";
 import NotFound from "./Pages/NotFound/NotFound";
 import HomePage from "./Pages/HomePage/HomePage";
 import AboutPage from "./Pages/AboutPage/AboutPage";
-import TopBar from "./Components/TopBar/TopBar";
+import TopBar from "./components/TopBar/TopBar";
 import Tasks from "./Pages/Tasks/Tasks";
 import Instrucctions from "./Pages/Instrucctions/Instrucctions";
 import Others from "./Pages/Others/Others";
