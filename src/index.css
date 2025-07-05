@@ -11,8 +11,10 @@
   --breakpoint-xl: 1024px;
   --breakpoint-2xl: 1200px;
 
-  --color-companyBlue: red;
-  --color-regularText: #a6dae5;
+  --color-dark: #111315;
+  --color-bg: #f1f2f6;
+  --color-textLight: #dfe1e3;
+  --color-textDark: #1d1e22;
 
   --spacing-sma_pad: 20px 40px;
   --spacing-med_pad: 150px 40px;

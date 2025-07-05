@@ -1,0 +1,9 @@
+.mobile-nav-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav-icons {
+  width: 25px;
+}
