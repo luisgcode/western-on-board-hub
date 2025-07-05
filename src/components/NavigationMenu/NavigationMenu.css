@@ -1,0 +1,17 @@
+.nav-link {
+  color: var(--color-textLight);
+  display: flex;
+  padding: 10px 5px;
+  transition: all 0.3s ease;
+  border-radius: 25px;
+}
+
+.nav-link:hover {
+  background: #242529;
+  transition: all 0.3s ease;
+  border-radius: 15px;
+}
+
+.nav-icons {
+  margin-right: 10px;
+}
