@@ -20,24 +20,32 @@
 
 /* & Typography settings */
 body {
-  font-size: clamp(18px, 2vw, 18px);
-  font-family: "Poppins", serif;
+  font-size: clamp(18px, 1.2vw, 20px);
+  font-family: "Jost", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
   line-height: 1.4;
   overflow-x: hidden;
 }
 
 h1 {
-  font-size: clamp(36px, 5vw, 60px);
-  font-weight: 800;
+  font-size: clamp(35.75px, 5.28vw, 55px);
+  font-weight: bold;
 }
 
 h2 {
-  font-size: clamp(25px, 4vw, 45px);
-  font-weight: 500;
+  font-size: clamp(31.2px, 4.61vw, 48px);
 }
 
 h3 {
-  font-size: clamp(18px, 3.5vw, 35px);
-  font-weight: 500;
+  font-size: clamp(27.3px, 4.03vw, 42px);
   position: relative;
+}
+
+h4 {
+  font-size: clamp(23.4px, 3.46vw, 36px);
+}
+
+h5 {
+  font-size: clamp(20.8px, 3.08vw, 32px);
 }
