@@ -3,7 +3,7 @@ import "./TopBar.css";
 const TopBar = () => {
   return (
     <>
-      <div className="bar w-full pl-5 bg-bg rounded-r-2xl py-5 flex items-center justify-between">
+      <div className="bar w-full pl-5 bg-bg rounded-tr-2xl py-5 flex items-center justify-between">
         <div className="input-row ">
           <input
             type="text"
@@ -13,7 +13,7 @@ const TopBar = () => {
         </div>
 
         <div className="greeting pr-5">
-          <span>Luis G.</span>
+          <span>Event Services</span>
         </div>
       </div>
     </>
