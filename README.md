@@ -116,10 +116,6 @@ western-on-board-hub/
 
 ### Typography
 
-- **Headers**: Inter Bold
-- **Body**: Inter Regular
-- **Monospace**: JetBrains Mono
-
 ## 📱 Features Roadmap
 
 ### Phase 1: MVP (Minimum Viable Product)

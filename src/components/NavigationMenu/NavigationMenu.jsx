@@ -15,7 +15,7 @@ const NavigationMenu = () => {
       </div>
       <ul className="links flex flex-col gap-1 ">
         <Link to="/">
-          <li className="nav-link">
+          <li className="nav-link text-textLight">
             <IconHome2 stroke={1} className="nav-icons" /> Home
           </li>
         </Link>
