@@ -11,6 +11,8 @@ const TopBar = () => {
             className="border rounded-3xl pl-6 border-gray-200 py-3 bg-white w-60  md:w-120 lg:w-3xl"
           />
         </div>
+
+        <span id="user"></span>
       </div>
     </>
   );

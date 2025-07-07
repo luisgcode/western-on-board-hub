@@ -1,35 +1,69 @@
 import React, { useState } from "react";
 import { signIn } from "../../firebase.js";
+import { useAuth } from "../../contexts/AuthContext.jsx";
 
 const LoginPage = () => {
+  // 1. Obtener información del usuario desde Context
+  const { user, loading: authLoading } = useAuth();
+
+  // 2. Estados locales para el formulario
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
-  const [loading, setLoading] = useState(false);
+  const [loading, setLoading] = useState(false); // Loading del botón submit
   const [error, setError] = useState("");
 
+  // 3. Función para manejar el login del formulario
   const handleSubmit = async (e) => {
     e.preventDefault();
-    setLoading(true);
-    setError("");
+    setLoading(true); // Activar loading del botón
+    setError(""); // Limpiar errores anteriores
 
     try {
+      // Llamar a Firebase para hacer login
       await signIn(email, password);
-      // Login exitoso - el usuario quedará logueado
+      // Si llega aquí = login exitoso
+      // useAuth detectará automáticamente el cambio
     } catch (error) {
       setError("Credenciales incorrectas");
     } finally {
-      setLoading(false);
+      setLoading(false); // Desactivar loading del botón
     }
   };
 
+  // 4. PASO 1: Si la app está verificando usuario, mostrar loading
+  if (authLoading) {
+    return (
+      <div className="min-h-screen bg-bg flex items-center justify-center p-4">
+        <div className="text-textDark">Verificando usuario...</div>
+      </div>
+    );
+  }
+
+  // 5. PASO 2: Si ya hay usuario logueado, mostrar mensaje
+  if (user) {
+    return (
+      <div className="min-h-screen bg-bg flex items-center justify-center p-4">
+        <div className="bg-white rounded-lg shadow-lg p-8 text-center">
+          <h2 className="text-textDark mb-4 font-bold">¡You are logged!</h2>
+        </div>
+      </div>
+    );
+  }
+
+  // 6. PASO 3: Si NO hay usuario, mostrar formulario de login
   return (
     <div className="min-h-screen bg-bg flex items-center justify-center p-4">
       <div className="bg-white rounded-lg shadow-lg p-8 w-full max-w-md">
-        <h2 className="text-textDark text-center mb-6 font-bold">Admin Login</h2>
-        
+        <h2 className="text-textDark text-center mb-6 font-bold">
+          Admin Login
+        </h2>
+
         <form onSubmit={handleSubmit} className="space-y-4">
           <div>
-            <label htmlFor="email" className="block text-textDark font-medium mb-2">
+            <label
+              htmlFor="email"
+              className="block text-textDark font-medium mb-2"
+            >
               Email:
             </label>
             <input
@@ -41,9 +75,12 @@ const LoginPage = () => {
               required
             />
           </div>
-          
+
           <div>
-            <label htmlFor="password" className="block text-textDark font-medium mb-2">
+            <label
+              htmlFor="password"
+              className="block text-textDark font-medium mb-2"
+            >
               Password:
             </label>
             <input
@@ -56,10 +93,8 @@ const LoginPage = () => {
             />
           </div>
 
-          {error && (
-            <p className="text-red-500 text-sm text-center">{error}</p>
-          )}
-          
+          {error && <p className="text-red-500 text-sm text-center">{error}</p>}
+
           <button
             type="submit"
             disabled={loading}

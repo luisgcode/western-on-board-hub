@@ -18,7 +18,6 @@ function App() {
     >
       <SideBar />
 
-      {/* Contenedor para las rutas */}
       <main className="w-full overflow-y-auto bg-white rounded-r-2xl ">
         <TopBar />
         <Routes>

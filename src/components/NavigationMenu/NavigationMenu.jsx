@@ -1,12 +1,24 @@
 import logo from "../../assets/images/western-logo.svg";
 import { IconInfoSquareRounded } from "@tabler/icons-react";
-import { IconHome2 } from "@tabler/icons-react";
+import { IconFiles } from "@tabler/icons-react";
 import { IconLogin } from "@tabler/icons-react";
 import { Link } from "react-router-dom";
+import { useAuth } from "../../contexts/AuthContext";
+import { logOut } from "../../firebase";
 
 import "./NavigationMenu.css";
 
 const NavigationMenu = () => {
+  const { user } = useAuth();
+
+  const handleLogout = async () => {
+    try {
+      await logOut();
+    } catch (error) {
+      console.error("Error session", error);
+    }
+  };
+
   return (
     <div className="navigation-menu flex flex-col gap-10 ">
       {/* Logo */}
@@ -16,15 +28,21 @@ const NavigationMenu = () => {
       <ul className="links flex flex-col gap-1 ">
         <Link to="/">
           <li className="nav-link text-textLight">
-            <IconHome2 stroke={1} className="nav-icons" /> Home
+            <IconFiles stroke={1} className="nav-icons" /> Documents
           </li>
         </Link>
-        <Link to="/login">
-          <li className="nav-link">
-            <IconLogin stroke={1} className="nav-icons" />
-            Login
+        {user ? (
+          <li className="nav-link" onClick={handleLogout}>
+            <IconLogin stroke={1} className="nav-icons" /> Logout
           </li>
-        </Link>
+        ) : (
+          <Link to="/login">
+            <li className="nav-link">
+              <IconLogin stroke={1} className="nav-icons" />
+              Login
+            </li>
+          </Link>
+        )}
         <Link to="/about">
           <li className="nav-link">
             <IconInfoSquareRounded stroke={1} className="nav-icons" />
