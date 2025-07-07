@@ -8,6 +8,8 @@ Workflow
 6. Keep everything simple - minimal code impact
 7. Add review section to [projectplan.md](http://projectplan.md/)
 
+8. Create a "must_learn.md" file (add to .gitignore for privacy). Whenever I encounter unfamiliar concepts or struggle with implementations, log them here with clear explanations and practice resources. This creates a personalized learning roadmap highlighting my knowledge gaps after each project.
+
 ## Mentoring Requirements
 
 - Explain what you're about to do and why

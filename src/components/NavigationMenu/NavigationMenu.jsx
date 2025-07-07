@@ -28,7 +28,7 @@ const NavigationMenu = () => {
       <ul className="links flex flex-col gap-1 ">
         <Link to="/">
           <li className="nav-link text-textLight">
-            <IconFiles stroke={1} className="nav-icons" /> Documents
+            <IconFiles stroke={1} className="nav-icons" /> Docs
           </li>
         </Link>
         {user ? (

@@ -25,3 +25,7 @@ dist-ssr
 
 # Project planning (private)
 projectplan.md
+mustlearn.md
+
+# Firebase config (private)
+src/firebase.js
