@@ -1,5 +1,11 @@
 // Import the functions you need from the SDKs you need
 import { initializeApp } from "firebase/app";
+import { getAuth } from "firebase/auth";
+import {
+  signInWithEmailAndPassword,
+  signOut,
+  onAuthStateChanged,
+} from "firebase/auth";
 // TODO: Add SDKs for Firebase products that you want to use
 // https://firebase.google.com/docs/web/setup#available-libraries
 
@@ -15,3 +21,19 @@ const firebaseConfig = {
 
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
+export const auth = getAuth(app);
+
+// 1. Función para iniciar sesión
+export const signIn = (email, password) => {
+  return signInWithEmailAndPassword(auth, email, password);
+};
+
+// 2. Función para cerrar sesión
+export const logOut = () => {
+  return signOut(auth);
+};
+
+// 3. Función para escuchar cambios de autenticación
+export const onAuthChange = (callback) => {
+  return onAuthStateChanged(auth, callback);
+};
