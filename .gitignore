@@ -26,6 +26,8 @@ dist-ssr
 # Project planning (private)
 projectplan.md
 mustlearn.md
+claude.local.md
+workflow-template.md
 
 # Firebase config (private)
 src/firebase.js
