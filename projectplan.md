@@ -49,10 +49,10 @@ A simple, accessible web hub for Western Fair District event services workers to
 
 ### Phase 2: Document Management (CURRENT)
 
-- [ ] **Step 2.1**: Create DocumentsPage.jsx in src/Pages/DocumentsPage/
+- [x] **Step 2.1**: Create DocumentsPage.jsx in src/Pages/DocumentsPage/
   - _Why_: We need a dedicated page to show all available documents
   - _How_: Create React component with JSX that renders a list of documents
-- [ ] **Step 2.2**: Add route "/documents" in App.jsx
+- [x] **Step 2.2**: Add route "/documents" in App.jsx
   - _Why_: Users need a URL to navigate to the documents page
   - _How_: Add `<Route path="/documents" element={<DocumentsPage />} />` in Routes
 - [ ] **Step 2.3**: Create src/data/documents.js with sample document data
