@@ -70,7 +70,10 @@ A simple, accessible web hub for Western Fair District event services workers to
 - [ ] **Step 2.7**: Add download functionality with window.open() or <a> tag
   - _Why_: Users need to actually download/view the PDFs
   - _How_: Option 1: `<a href="/documents/file.pdf" download>` or Option 2: `window.open()`
-- [ ] **Step 2.8**: Test document listing and download in browser
+- [ ] **Step 2.8**: Implement Protected Routes for document access
+  - _Why_: Users should only access documents after login (security first)
+  - _How_: Create ProtectedRoute component that checks authentication state
+- [ ] **Step 2.9**: Test document listing and download in browser
   - _Why_: Make sure everything works before moving to next phase
   - _How_: Click download buttons, check mobile responsive, test different browsers
 
