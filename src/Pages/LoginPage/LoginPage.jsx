@@ -52,12 +52,9 @@ const LoginPage = () => {
 
   // 6. PASO 3: Si NO hay usuario, mostrar formulario de login
   return (
-    <div className="min-h-screen bg-bg flex items-center justify-center p-4">
-      <div className="bg-white rounded-lg shadow-lg p-8 w-full max-w-md">
-        <h2 className="text-textDark text-center mb-6 font-bold">
-          Admin Login
-        </h2>
-
+    <div className="p-10">
+      <h2>Login.</h2>
+      <div className=" ">
         <form onSubmit={handleSubmit} className="space-y-4">
           <div>
             <label
