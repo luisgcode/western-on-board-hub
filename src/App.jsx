@@ -6,9 +6,6 @@ import HomePage from "./Pages/HomePage/HomePage";
 import AboutPage from "./Pages/AboutPage/AboutPage";
 import LoginForm from "./Pages/LoginPage/LoginPage";
 import TopBar from "./components/TopBar/TopBar";
-import Tasks from "./Pages/Tasks/Tasks";
-import Instrucctions from "./Pages/Instrucctions/Instrucctions";
-import Others from "./Pages/Others/Others";
 
 function App() {
   return (
@@ -24,9 +21,7 @@ function App() {
           <Route path="/" element={<HomePage />} />
           <Route path="/about" element={<AboutPage />} />
           <Route path="/login" element={<LoginForm />} />
-          <Route path="/tasks" element={<Tasks />} />
-          <Route path="/instrucctions" element={<Instrucctions />} />
-          <Route path="/others" element={<Others />} />
+
           <Route path="*" element={<NotFound />} />
         </Routes>
       </main>

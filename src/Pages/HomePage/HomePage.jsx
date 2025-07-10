@@ -1,12 +1,12 @@
-import Categories from "../../Components/Categories/Categories";
+import Documents from "../../Components/Documents/Documents";
 
 const HomePage = () => {
   return (
     <div>
       <section className="p-10">
-        <h2>Categories.</h2>
-        <p>Select what documents you are looking for.</p>
-        <Categories />
+        <h2>Documents.</h2>
+        <p>Select what document you are looking for.</p>
+        <Documents />
       </section>
     </div>
   );

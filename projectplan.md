@@ -55,7 +55,7 @@ A simple, accessible web hub for Western Fair District event services workers to
 - [x] **Step 2.2**: Add route "/documents" in App.jsx
   - _Why_: Users need a URL to navigate to the documents page
   - _How_: Add `<Route path="/documents" element={<DocumentsPage />} />` in Routes
-- [ ] **Step 2.3**: Create src/data/documents.js with sample document data
+- [x] **Step 2.3**: Create src/data/documents.js with sample document data
   - _Why_: We need fake data to practice with before building real database
   - _How_: Export array of objects with {id, name, description, filePath, category}
 - [ ] **Step 2.4**: Create DocumentCard.jsx component to display each document
@@ -148,7 +148,7 @@ A simple, accessible web hub for Western Fair District event services workers to
 
 - [ ] PDF preview in browser
 - [ ] Document search
-- [ ] Document categories
+- [ ] Document documents
 - [ ] User activity tracking
 
 ---
