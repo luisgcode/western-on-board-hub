@@ -1,4 +1,4 @@
-import Documents from "../../Components/Documents/Documents";
+import DocumentsPage from "../../Components/Documents/Documents";
 
 const HomePage = () => {
   return (
@@ -6,7 +6,7 @@ const HomePage = () => {
       <section className="p-10">
         <h2>Documents.</h2>
         <p>Select what document you are looking for.</p>
-        <Documents />
+        <DocumentsPage />
       </section>
     </div>
   );
