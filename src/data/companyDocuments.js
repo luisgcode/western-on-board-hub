@@ -20,6 +20,13 @@ const documents = [
     filePath: "",
     category: "Safety",
   },
+  {
+    id: 4,
+    name: "Safety Instrucctionss",
+    description: "Guide for safety job",
+    filePath: "",
+    category: "Safety",
+  },
 ];
 
 export default documents;

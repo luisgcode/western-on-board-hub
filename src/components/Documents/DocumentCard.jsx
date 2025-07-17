@@ -1,5 +1,12 @@
-function DocumentItem(props) {
-  <span>name: {props.name}</span>;
-}
+const DocumentCard = (props) => {
+  return (
+    <>
+      <section>
+        <span>{props.name}</span>
+        <span>{props.id}</span>
+      </section>
+    </>
+  );
+};
 
-export default DocumentItem;
+export default DocumentCard;
