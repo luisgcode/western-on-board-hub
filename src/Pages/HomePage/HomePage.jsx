@@ -1,4 +1,4 @@
-import DocumentsPage from "../../Components/Documents/DocumentsPage";
+import DocumentsPage from "../../Components/Documents/DocumentsPage.jsx";
 
 const HomePage = () => {
   return (
