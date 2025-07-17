@@ -4,9 +4,17 @@ import companyDocuments from "../../data/companyDocuments";
 const DocumentsPage = () => {
   return (
     <>
-      {companyDocuments.map(function (item) {
-        return <DocumentCard name={item.name} id={item.id} />;
-      })}
+      <div className="flex gap-4 flex-wrap">
+        {companyDocuments.map(function (item) {
+          return (
+            <DocumentCard
+              name={item.name}
+              id={item.id}
+              description={item.description}
+            />
+          );
+        })}
+      </div>
     </>
   );
 };
