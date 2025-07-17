@@ -1,5 +1,5 @@
 import "./SideBar.css";
-import NavigationMenu from "../NavigationMenu/NavigationMenu";
+import NavigationMenu from "../NavigationMenu/NavigationMenu.jsx";
 
 const SideBar = () => {
   return (

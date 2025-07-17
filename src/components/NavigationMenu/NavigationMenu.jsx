@@ -4,7 +4,7 @@ import { IconFiles } from "@tabler/icons-react";
 import { IconLogin } from "@tabler/icons-react";
 import { Link } from "react-router-dom";
 import { useAuth } from "../../contexts/AuthContext";
-import { logOut } from "../../firebase";
+import { logOut } from "../../firebase.js";
 
 import "./NavigationMenu.css";
 

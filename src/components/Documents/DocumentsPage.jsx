@@ -1,5 +1,5 @@
-import DocumentCard from "./DocumentCard";
-import companyDocuments from "../../data/companyDocuments";
+import DocumentCard from "./DocumentCard.jsx";
+import companyDocuments from "../../data/companyDocuments.js";
 
 const DocumentsPage = () => {
   return (
