@@ -1,11 +1,11 @@
 import { Route, Routes } from "react-router-dom";
 import "./App.css";
-import SideBar from "./Components/SideBar/SideBar.jsx";
+import SideBar from "./components/SideBar/SideBar.jsx";
 import NotFound from "./Pages/NotFound/NotFound.jsx";
 import HomePage from "./Pages/HomePage/HomePage.jsx";
 import AboutPage from "./Pages/AboutPage/AboutPage.jsx";
 import LoginForm from "./Pages/LoginPage/LoginPage.jsx";
-import TopBar from "./Components/TopBar/TopBar.jsx";
+import TopBar from "./components/TopBar/TopBar.jsx";
 
 function App() {
   return (
