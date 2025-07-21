@@ -16,7 +16,8 @@
       "WebFetch(domain:western-on-board-hub-1tdf.vercel.app)",
       "Bash(git checkout:*)",
       "Bash(npm run dev:*)",
-      "Bash(node:*)"
+      "Bash(node:*)",
+      "Bash(mkdir:*)"
     ],
     "deny": []
   }

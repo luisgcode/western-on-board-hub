@@ -23,16 +23,10 @@ dist-ssr
 *.sln
 *.sw?
 
-# Project planning (private)
-projectplan.md
-must_learn.md
-mustlearn.md
-claude.local.md
-workflow-template.md
+# Claude setup and learning files (private)
+.claude/
 
-# Keep PROJECT_STATUS.md public for continuity
-
-# AI/Python development files (private)
+# AI/Python development files (private)  
 ai_services/
 *.env.local
 requirements.txt
