@@ -19,3 +19,4 @@ Workflow
 - After changes, ask "What did you learn?"
 - Suggest related concepts to explore
 - Point out patterns to recognize
+- **Tell me when I should learn a concept before starting coding** - If you consider that I need to know something specific before implementing it (like vector databases, transformers, async patterns), recommend me to read or watch a video about it first. Give me specific resources and concepts to study.

@@ -1,92 +1,106 @@
-# Must Learn - Personal Learning Roadmap
+# 📚 Must Learn - Personal Learning Notes
 
-## JavaScript Data Structures
+## ✅ JavaScript Fundamentals (Completed)
 
 ### Arrays vs Objects - Data Organization
-**Date**: 2025-07-10
-**Context**: Working on documents.js data structure for onboarding app
+**When I learned this**: Working on documents.js structure
 
-**What I struggled with:**
-- Mixing up array and object syntax
-- Forgetting the `=` assignment operator
-- Not understanding the difference between a single object and an array of objects
+**Key insight**: 
+- **Arrays** `[]` = Filing cabinet (multiple similar things)
+- **Objects** `{}` = Folder (one thing with details)
+- **Array of Objects** = Best for document lists
 
-**Key concepts to remember:**
-- **Single Object**: `const obj = { key: "value" }`
-- **Array of Objects**: `const arr = [{ key: "value" }, { key: "value" }]`
-- **Arrays use square brackets** `[]` - like a filing cabinet
-- **Objects use curly braces** `{}` - like folders in the cabinet
-
-**Example to review:**
-```javascript
-// WRONG: Missing = and wrong structure
-const documents { id: "", name: "" }
-
-// RIGHT: Array of objects with assignment
-const documents = [
-  { id: 1, name: "Employee Handbook" },
-  { id: 2, name: "IT Setup Guide" },
-  { id: 3, name: "Safety Manual" }
-]
-```
-
-**When to use what - Document Storage Examples:**
-
-**1. Just Arrays** - Simple list of items
-```javascript
-const documentNames = ["Employee Handbook", "IT Setup", "Safety Manual"]
-```
-- **Best for**: Simple lists, temporary storage, when you only need one piece of info
-- **Limitations**: Hard to add more details later, no structure
-
-**2. Just Objects** - Single item with properties
-```javascript
-const document = { id: 1, name: "Employee Handbook", category: "HR" }
-```
-- **Best for**: Single item, configuration settings, representing one thing
-- **Limitations**: Can't handle multiple items easily
-
-**3. Array of Objects** - Multiple structured items (OUR CHOICE)
+**Example that works**:
 ```javascript
 const documents = [
   { id: 1, name: "Employee Handbook", category: "HR" },
-  { id: 2, name: "IT Setup", category: "Tech" },
-  { id: 3, name: "Safety Guidelines", category: "Safety" },
-  { id: 4, name: "Benefits Overview", category: "HR" }
+  { id: 2, name: "IT Setup", category: "Tech" }
 ]
 ```
-- **Best for**: Lists of similar items that need multiple properties
-- **Perfect for**: Database-like data, user lists, product catalogs, document libraries
-
-**4. Object with Arrays** - Grouped data
-```javascript
-const documentsByCategory = {
-  HR: ["Employee Handbook", "Benefits Guide"],
-  Tech: ["IT Setup", "Software List"]
-}
-```
-- **Best for**: Pre-organized data, when you need to group things
-
-**5. Nested Objects** - Complex relationships
-```javascript
-const documents = {
-  1: { name: "Handbook", category: "HR", author: { name: "John", dept: "HR" } },
-  2: { name: "IT Setup", category: "Tech", author: { name: "Jane", dept: "IT" } }
-}
-```
-- **Best for**: Complex data with relationships, when you need to lookup by key
-
-**Decision Framework:**
-- **Multiple similar items?** → Array of Objects
-- **Single item with details?** → Object
-- **Simple list?** → Array
-- **Need to group/organize?** → Object with Arrays
-- **Complex relationships?** → Nested Objects
-
-**Practice resources:**
-- Review JavaScript array methods (map, filter, find)
-- Practice creating different data structures
-- Understand when to use arrays vs objects
-- Try converting the same data between different structures
 
 ---
+
+## 🎯 Current Study Topics
+
+### JavaScript Array Methods (In Progress)
+**Resource**: [Array Methods Video](https://www.youtube.com/watch?v=R8rmfD9Y5-c)
+**Goal**: Master `map`, `filter`, `reduce`, `find`
+
+**My notes**:
+- `map()` = Transform each item
+- `filter()` = Keep items that match condition  
+- `reduce()` = Combine all items into one result
+- `find()` = Get first item that matches
+
+**Practice examples**:
+```javascript
+// Filter documents by category
+documents.filter(doc => doc.category === "HR")
+
+// Get just the names
+documents.map(doc => doc.name)
+
+// Find specific document
+documents.find(doc => doc.id === 1)
+```
+
+**Struggles/Questions**:
+- [ ] When to use `reduce()` vs `map()`?
+- [ ] How does `filter()` + `map()` work together?
+
+---
+
+### TypeScript Basics (Next)
+**Resource**: [TypeScript Handbook](https://www.typescriptlang.org/docs/handbook/2/basic-types.html)
+**Goal**: Understand interfaces and basic types
+
+**My notes**:
+*(Add notes as you study)*
+
+**Practice examples**:
+*(Add code examples as you learn)*
+
+**Struggles/Questions**:
+*(Write down what confuses you)*
+
+---
+
+### Understanding Transformers (Next)  
+**Resource**: [Hugging Face Course Ch1](https://huggingface.co/course/chapter1)
+**Goal**: Understand how AI processes text
+
+**My notes**:
+*(Add notes as you study)*
+
+**Key questions to answer**:
+- What are tokens vs words?
+- How does AI "understand" text?
+- What's a context window?
+
+---
+
+## 🎯 Future Learning Topics
+
+### Vector Embeddings (Phase 5)
+**When I need this**: Building semantic search
+**Key concept**: Numbers that represent text meaning
+
+### Python Basics (Phase 4)  
+**When I need this**: Building AI microservices
+**Key differences from JavaScript**: Indentation, no braces
+
+---
+
+## 📝 Learning Notes Template
+
+### [Topic Name]
+**Resource**: [Link or reference]
+**Goal**: [What I want to understand]
+**My notes**: [Key insights as I learn]
+**Practice examples**: [Code I tried]
+**Struggles/Questions**: [What confused me]
+**When I figured it out**: [Aha moment]
+
+---
+
+**🎯 Remember: Write notes in your own words. If you can't explain it simply, you don't understand it yet.**

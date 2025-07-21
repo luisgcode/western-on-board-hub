@@ -25,9 +25,17 @@ dist-ssr
 
 # Project planning (private)
 projectplan.md
+must_learn.md
 mustlearn.md
 claude.local.md
 workflow-template.md
+
+# Keep PROJECT_STATUS.md public for continuity
+
+# AI/Python development files (private)
+ai_services/
+*.env.local
+requirements.txt
 
 # Firebase config (private)
 src/firebase.js

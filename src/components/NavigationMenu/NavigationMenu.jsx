@@ -1,4 +1,4 @@
-import logo from "../../assets/images/company-logo.svg";
+import logo from "../../assets/images/company-logo.png";
 import { IconInfoSquareRounded } from "@tabler/icons-react";
 import { IconFiles } from "@tabler/icons-react";
 import { IconLogin } from "@tabler/icons-react";
