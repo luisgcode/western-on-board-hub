@@ -12,7 +12,11 @@
       "Bash(ls:*)",
       "Bash(find:*)",
       "Bash(cat:*)",
-      "Bash(sed:*)"
+      "Bash(sed:*)",
+      "WebFetch(domain:western-on-board-hub-1tdf.vercel.app)",
+      "Bash(git checkout:*)",
+      "Bash(npm run dev:*)",
+      "Bash(node:*)"
     ],
     "deny": []
   }

@@ -1,4 +1,4 @@
-import logo from "../../assets/images/western-logo.svg";
+import logo from "../../assets/images/company-logo.svg";
 import { IconInfoSquareRounded } from "@tabler/icons-react";
 import { IconFiles } from "@tabler/icons-react";
 import { IconLogin } from "@tabler/icons-react";
@@ -23,7 +23,7 @@ const NavigationMenu = () => {
     <div className="navigation-menu flex flex-col gap-10 ">
       {/* Logo */}
       <div className="logo-box bg-white rounded-2xl p-4">
-        <img className="logo w-[120px] " src={logo} alt="Western Logo" />
+        <img className="logo w-[120px] " src={logo} alt="Company Logo" />
       </div>
       <ul className="links flex flex-col gap-1 ">
         <Link to="/">

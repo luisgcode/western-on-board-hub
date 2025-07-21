@@ -1,15 +1,18 @@
-# Western Fair District - OnBoard Hub
+# Company - OnBoard Hub
 
-> **A centralized digital hub for Western Fair District event services workers to access onboarding documents, PDFs, and essential instructions online.**
+> **A centralized digital hub for Company event services workers to access onboarding documents, PDFs, and essential instructions online.**
+
+🚀 **[LIVE DEMO](https://company-on-board-hub-1tdf.vercel.app/)** 
 
 [![React](https://img.shields.io/badge/React-19.1.0-61DAFB?style=flat-square&logo=react)](https://reactjs.org/)
 [![Vite](https://img.shields.io/badge/Vite-7.0.0-646CFF?style=flat-square&logo=vite)](https://vitejs.dev/)
 [![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-4.1.11-38B2AC?style=flat-square&logo=tailwind-css)](https://tailwindcss.com/)
+[![Vercel](https://img.shields.io/badge/Deployed_on-Vercel-000000?style=flat-square&logo=vercel)](https://company-on-board-hub-1tdf.vercel.app/)
 [![License](https://img.shields.io/badge/License-MIT-green.svg?style=flat-square)](LICENSE)
 
 ## 🎯 Project Overview
 
-The Western Fair District OnBoard Hub is a modern, responsive web application designed to streamline the onboarding process for new event services workers. By providing centralized access to all necessary documents, PDFs, and instructions online, this hub eliminates the need for physical paperwork and makes the training process more efficient and accessible.
+The Company OnBoard Hub is a modern, responsive web application designed to streamline the onboarding process for new event services workers. By providing centralized access to all necessary documents, PDFs, and instructions online, this hub eliminates the need for physical paperwork and makes the training process more efficient and accessible.
 
 ### Key Features
 
@@ -57,8 +60,8 @@ The Western Fair District OnBoard Hub is a modern, responsive web application de
 1. **Clone the repository**
 
    ```bash
-   git clone https://github.com/yourusername/western-on-board-hub.git
-   cd western-on-board-hub
+   git clone https://github.com/yourusername/company-on-board-hub.git
+   cd company-on-board-hub
    ```
 
 2. **Install dependencies**
@@ -88,7 +91,7 @@ The Western Fair District OnBoard Hub is a modern, responsive web application de
 ## 🏗️ Project Structure
 
 ```
-western-on-board-hub/
+company-on-board-hub/
 ├── public/                 # Static assets
 ├── src/                    # Source code
 │   ├── components/         # React components
@@ -239,7 +242,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 🙏 Acknowledgments
 
-- Western Fair District for the opportunity
+- Company for the opportunity
 - React and Vite communities
 - Tailwind CSS team
 - Supabase for backend services
@@ -248,9 +251,9 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 For questions or support, please contact:
 
-- **Email**: support@westernfairdistrict.com
-- **GitHub Issues**: [Create an issue](https://github.com/yourusername/western-on-board-hub/issues)
+- **Email**: support@company.com
+- **GitHub Issues**: [Create an issue](https://github.com/yourusername/company-on-board-hub/issues)
 
 ---
 
-**Built with ❤️ for the Western Fair District team**
+**Built with ❤️ for the Company team**

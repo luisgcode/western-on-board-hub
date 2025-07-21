@@ -3,7 +3,7 @@ const documents = [
     id: 1,
     name: "Employee Handbook",
     description:
-      "Complete guide to Western Fair District policies, procedures, and expectations for all staff members",
+      "Complete guide to Company policies, procedures, and expectations for all staff members",
     filePath: "/documents/employee-handbook.pdf",
     category: "Onboarding",
   },
